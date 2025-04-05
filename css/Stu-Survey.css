@@ -1,0 +1,149 @@
+/* Vrishin Reddy Minkuri - G01444633 */
+
+/* Root Variables */
+:root {
+    --gmu-green: #006633;
+    --gmu-yellow: #FFCC33;
+    --text-color: #333;
+    --background-color: #f9f9f9;
+    --input-focus-color: #FFCC33;
+    --hover-bg-color: #f0f0f0;
+}
+
+/* General Page Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: var(--gmu-green) !important;
+    padding: 0.8rem;
+    position: relative;
+}
+
+.navbar-title-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    white-space: nowrap;
+}
+
+.navbar-title {
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: #f3efef;
+}
+
+.navbar-brand img {
+    max-height: 50px;
+    filter: drop-shadow(3px 3px 5px white);
+}
+
+
+/* image shadow sytling */
+.logo-hover {
+    transition: filter 0.3s ease-in-out;
+}
+
+.logo-hover:hover {
+    filter: brightness(0) invert(1);
+}
+
+/* Container Styling */
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+/* Form Elements */
+.form-group label {
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.required::after {
+    content: " *";
+    color: red;
+}
+
+.form-control {
+    border: 2px solid var(--gmu-green);
+    border-radius: 5px;
+}
+
+.form-control:focus {
+    border-color: var(--input-focus-color);
+    box-shadow: 0px 0px 5px var(--input-focus-color);
+}
+
+/* Checkboxes and Radio Buttons */
+.form-check-label {
+    color: var(--text-color);
+}
+
+.form-check-input:checked {
+    background-color: var(--gmu-green);
+    border-color: var(--gmu-green);
+}
+
+/* Select Dropdown */
+.form-control select {
+    border: 2px solid var(--gmu-green);
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--gmu-green);
+    border: none;
+    font-size: 1.2rem;
+    padding: 12px 18px;
+    border-radius: 8px;
+}
+
+.btn-primary:hover {
+    background-color: var(--gmu-yellow);
+    color: var(--text-color);
+}
+
+.btn-secondary {
+    background-color: #FFCC33;
+    border: none;
+    font-size: 1.2rem;
+    padding: 12px 18px;
+    border-radius: 8px;
+}
+
+.btn-secondary:hover {
+    background-color: var(--gmu-green);
+    color: rgb(246, 244, 244);
+}
+
+.form-group.text-center button {
+    min-width: 200px;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--gmu-green);
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: var(--gmu-yellow);
+}

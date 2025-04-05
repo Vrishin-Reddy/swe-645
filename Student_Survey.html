@@ -1,0 +1,156 @@
+<!-- Vrishin Reddy Minkuri -->
+<!-- G01444633 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Survey Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/Stu-Survey.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    
+        <!-- GMU Logo on the Left -->
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="img/logo.png" alt="George Mason Logo" width="200" height="100" class="logo-hover d-inline-block align-top">
+        </a>
+        
+        <!-- Centered Text -->
+        <div class="navbar-title-container">
+            <h1 class="navbar-title">GMU Visit Student Survey Form</h1>
+        </div>
+    
+</nav>
+
+<div class="container mt-4">
+    
+    <form action="#" method="post">
+        <!-- Personal Information -->
+        <div class="form-group">
+            <label class="required" for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label class="required" for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label class="required" for="street">Street Address</label>
+            <input type="text" id="street" name="street" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label class="required" for="city">City</label>
+            <input type="text" id="city" name="city" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label class="required" for="state">State</label>
+            <input type="text" id="state" name="state" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label class="required" for="zip">Zip</label>
+            <input type="text" id="zip" name="zip" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label class="required" for="telephone">Telephone Number</label>
+            <input type="tel" id="telephone" name="telephone" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label class="required" for="email">Email</label>
+            <input type="email" id="email" name="email" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label class="required" for="date">Date of Survey</label>
+            <input type="date" id="date" name="date" class="form-control" required>
+        </div>
+
+        <!-- Checkboxes -->
+        <div class="form-group">
+            <label class="required">What did you like most about the campus?</label><br>
+            <div class="form-check">
+                <input type="checkbox" id="students" name="campus-like" class="form-check-input" value="Students">
+                <label for="students" class="form-check-label">Students</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" id="location" name="campus-like" class="form-check-input" value="Location">
+                <label for="location" class="form-check-label">Location</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" id="campus" name="campus-like" class="form-check-input" value="Campus">
+                <label for="campus" class="form-check-label">Campus</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" id="atmosphere" name="campus-like" class="form-check-input" value="Atmosphere">
+                <label for="atmosphere" class="form-check-label">Atmosphere</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" id="dorm" name="campus-like" class="form-check-input" value="Dorm Rooms">
+                <label for="dorm" class="form-check-label">Dorm Rooms</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" id="sports" name="campus-like" class="form-check-input" value="Sports">
+                <label for="sports" class="form-check-label">Sports</label>
+            </div>
+        </div>
+
+        <!-- Radio Buttons -->
+        <div class="form-group">
+            <label class="required">How did you become interested in the university?</label><br>
+            <div class="form-check">
+                <input type="radio" id="friends" name="interest-source" class="form-check-input" value="Friends" required>
+                <label for="friends" class="form-check-label">Friends</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" id="tv" name="interest-source" class="form-check-input" value="Television">
+                <label for="tv" class="form-check-label">Television</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" id="internet" name="interest-source" class="form-check-input" value="Internet">
+                <label for="internet" class="form-check-label">Internet</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" id="other" name="interest-source" class="form-check-input" value="Other">
+                <label for="other" class="form-check-label">Other</label>
+            </div>
+        </div>
+
+        <!-- Dropdown List -->
+        <div class="form-group">
+            <label class="required" for="recommend">Likelihood of Recommending the School</label>
+            <select id="recommend" name="recommend" class="form-control" required>
+                <option value="">Select an option...</option>
+                <option value="Very Likely">Very Likely</option>
+                <option value="Likely">Likely</option>
+                <option value="Unlikely">Unlikely</option>
+            </select>
+        </div>
+
+        <!-- Raffle -->
+        <div class="form-group">
+            <label class="required" for="raffle">Raffle (Enter at least 10 comma-separated numbers ranging from 1-100)</label>
+            <input type="text" id="raffle" name="raffle" class="form-control" pattern="^([1-9][0-9]?(,[1-9][0-9]?)*)(,[1-9][0-9]?)?$" required>
+        </div>
+
+        <!-- Additional Comments -->
+        <div class="form-group">
+            <label for="comments">Additional Comments</label>
+            <textarea id="comments" name="comments" class="form-control" rows="4"></textarea>
+        </div>
+
+        <!-- Buttons -->
+        <div class="form-group text-center">
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="reset" class="btn btn-secondary">Cancel</button>
+        </div>
+    </form>
+</div>
+
+<script src="survey.js"></script>
+
+</body>
+</html>

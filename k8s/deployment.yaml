@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: student-survey-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: student-survey
+  template:
+    metadata:
+      labels:
+        app: student-survey
+    spec:
+      containers:
+      - name: student-survey-container
+        image: 339713065101.dkr.ecr.us-east-1.amazonaws.com/student-survey-app:latest
+        ports:
+        - containerPort: 80
