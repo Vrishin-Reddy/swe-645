@@ -33,8 +33,8 @@ pipeline {
 			
 		stage("Deploying to Rancher") {
 			steps {
-				sh 'sudo kubectl set image deployment/reddysdep2 container-0=vrishin/student-survey-app:$BUILD_TIMESTAMP -n default'
-				sh 'sudo kubectl rollout status deployment/reddysdep2 -n default'
+				sh 'kubectl set image deployment/reddysdep2 container-0=vrishin/student-survey-app:$BUILD_TIMESTAMP -n default'
+				sh 'kubectl rollout status deployment/reddysdep2 -n default'
 			}
 		}
 		
