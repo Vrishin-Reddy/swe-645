@@ -10,8 +10,7 @@ RUN rm -rf ./*
 # Copy your application files to the container
 COPY . /usr/share/nginx/html
 
-# Expose port 5000 for web traffic
-EXPOSE 5000
+EXPOSE 80
 
 # Start the Nginx server
 CMD ["nginx", "-g", "daemon off;"]
