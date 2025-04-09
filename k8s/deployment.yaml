@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: student-survey-container
-        image: 339713065101.dkr.ecr.us-east-1.amazonaws.com/student-survey-app:latest
+        image: vrishin/student-survey-app:0.1
         ports:
-        - containerPort: 80
+        - containerPort: 5000
